@@ -768,3 +768,130 @@ button:hover{
 }
 /*hasta aqui*/
 /*fin admin hugo*/
+
+
+/*vlady transferencia*/
+.ventana_transferencia{
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+main {
+    background: linear-gradient(to bottom, #4A82B8, #26598C);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 45px; 
+    align-items: center;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+main h1 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.formulario {
+    background-color: #f0f0f0;
+    padding: 15px 10px 5px 10px;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+label {
+    width: 150px; 
+    font-weight: bold;
+    color: #002E62;
+}
+
+input, .select-sistema {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 2px 4px;
+    height: 20px;
+    outline: none;
+}
+
+.input-flat {
+    flex: 1;
+    border: 1px solid #7F9DB9;
+    background-color: #FFFFFF;
+}
+
+.select-sistema {
+    flex: 1;
+    border: 1px solid #7F9DB9;
+    background-color: #FFFFFF;
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+}
+
+.select-sistema option {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.input-foco-azul {
+    background-color: #3399FF;
+    color: #FFFFFF;
+}
+
+.input-foco-azul option {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.btn-sistema {
+    background: linear-gradient(to bottom, #49718B, #1F384D);
+    color: #FFFFFF;
+    font-weight: bold;
+    border-top: 1px solid #A0B0C0;
+    border-left: 1px solid #A0B0C0;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 3px 20px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 90px;
+}
+
+.btn-sistema:active {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #A0B0C0;
+    border-bottom: 1px solid #A0B0C0;
+}
+
+.underline {
+    text-decoration: underline;
+}
