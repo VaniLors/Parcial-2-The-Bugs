@@ -78,6 +78,15 @@ section :last-child div{
     background-color: #f0f0f0;
     border: 2px solid #808080;
     box-shadow: 2px 2px 0 #fff inset;
+=======
+/*inicio del css oficinas*/
+.ventana {
+    display: none;
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -391,12 +400,371 @@ section :last-child div{
 
 
 
-
-
-
-
-
-
-
-
 /*hadsta aqui alex*/
+=======
+}
+
+.window-container {
+    border: 2px solid #808080;
+    width: 800px;
+    max-width: 100%;
+    background-color: #F0F0F0;
+    padding: 1px;
+}
+
+.top-bar {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+.header-blue {
+    background: linear-gradient(to bottom, #4A82B8, #26598C);
+    color: #FFFFFF;
+    padding: 4px 8px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.header-blue .unit-info {
+    font-size: 11px;
+    color: #C0D9EF;
+}
+
+.header-blue .title-center {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: -10px;
+}
+
+.form-section {
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #808080;
+}
+
+.form-fields {
+    width: 85%;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 6px;
+    align-items: center;
+}
+
+.form-row label {
+    width: 90px;
+    color: #002E62;
+    font-weight: bold;
+}
+
+.input-select-container {
+    display: flex;
+    border: 1px solid #7F9DB9;
+    background-color: #FFFFAA;
+    width: 480px;
+}
+
+.input-code {
+    width: 40px;
+    border: none;
+    border-right: 1px solid #7F9DB9;
+    background-color: #FFFFAA;
+    text-align: center;
+    padding: 2px;
+}
+
+.select-custom {
+    flex-grow: 1;
+    border: none;
+    background-color: #FFFFAA;
+    padding: 2px;
+    outline: none;
+}
+
+.status-label {
+    margin-left: 10px;
+    border: 1px solid #7F9DB9;
+    padding: 3px 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.textarea-observation {
+    width: 480px;
+    height: 45px;
+    border: 1px solid #7F9DB9;
+    background-color: #FFFFAA;
+    resize: none;
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 95px;
+}
+
+.grid-section {
+    background-color: #FFFFFF;
+    padding: 5px;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFAA;
+}
+
+.data-table th {
+    background: linear-gradient(to bottom, #1D5086, #003366);
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+    padding: 4px 5px;
+    border: 1px solid #666666;
+}
+
+.data-table td {
+    border: 1px solid #D0D0D0;
+    padding: 3px 5px;
+    height: 20px;
+}
+
+.data-table tr.filled-row {
+    background-color: #DCE6F2;
+    color: #000000;
+}
+
+.data-table tr.filled-row td:first-child {
+    background-color: #0055AA;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer-actions {
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    border-top: 1px solid #808080;
+}
+
+.bottom-btn-group-left {
+    display: flex;
+    border: 1px solid #808080;
+    padding: 2px;
+    background-color: #D4D0C8;
+    gap: 2px;
+}
+
+.btn-classic {
+    background: linear-gradient(to bottom, #E0DFE3, #C8C7CD);
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    color: #003366;
+    padding: 3px 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: inset 1px 1px 0px #FFFFFF;
+}
+
+.btn-classic:active {
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    box-shadow: none;
+}
+
+.btn-salir {
+    background: linear-gradient(to bottom, #49718B, #1F384D);
+    color: #FFFFFF;
+    font-weight: bold;
+    border-top: 1px solid #A0B0C0;
+    border-left: 1px solid #A0B0C0;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 90px;
+    box-shadow: none;
+}
+/*fin del css oficinas*/
+
+
+/*inicio admin hugo*/
+.ventana_admi{
+    display: none;
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+    margin: auto;
+    padding-bottom:20px;
+}
+
+/* BARRA SUPERIOR */
+
+/* ENCABEZADO */
+.encabezado{
+    height:95px;
+    background:linear-gradient(to bottom,#4ca6ff,#00508f);
+    color:white;
+    padding-left:20px;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    font-size:55px;
+    font-weight:bold;
+    letter-spacing:6px;
+}
+
+.subtitulo{
+    position:absolute;
+    left:25px;
+    top:62px;
+    font-size:18px;
+    font-style:italic;
+}
+
+/* INFORMACION */
+.informacion{
+    padding:15px 20px;
+    font-size:14px;
+    color:#444;
+}
+
+.fila{
+    margin-bottom:6px;
+}
+
+.titulo{
+    font-weight:bold;
+    color:#0d3f72;
+}
+
+.valor{
+    margin-left:8px;
+}
+
+.ministerio{
+    margin-left:25px;
+}
+
+/* CONTENEDOR */
+.contenedor-seccion{
+    margin:0 ;
+    border:1px solid #8a8a8a;
+    background:#efefef;
+}
+
+/* BARRA */
+.barra-seccion{
+    background:linear-gradient(to bottom,#333,#111);
+    color:white;
+    padding:5px 10px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* TITULO */
+.titulo-seccion{
+    background:linear-gradient(to bottom,#3f92d7,#0b4f89);
+    color:white;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    padding:12px;
+    border-top:1px solid #78bfff;
+}
+
+/* CONTENIDO */
+.contenido{
+    display:flex;
+    padding:18px;
+}
+
+/* MENU */
+.menu-lateral{
+    width:45px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-right:15px;
+}
+
+.icono{
+    width:35px;
+    height:35px;
+    border:1px solid #888;
+    background:linear-gradient(to bottom,#ffffff,#d7d7d7);
+}
+
+/* TABLA */
+.tabla-contenedor{
+    flex:1;
+    background:white;
+    border:1px solid #666;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#004d97;
+    color:white;
+}
+
+th{
+    border:1px solid #555;
+    padding:6px;
+    font-size:14px;
+}
+
+td{
+    border:1px solid #999;
+    height:28px;
+}
+
+/* BOTONES */
+.botones{
+    width:85%;
+    margin:20px auto;
+    padding:15px;
+    border:2px solid #a0aebb;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-around;
+    background:#f9f9f9;
+}
+
+button{
+    width:100px;
+    height:35px;
+    border:2px solid #666;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    background:linear-gradient(to bottom,#006cae,#002b45);
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+/*hasta aqui*/
+/*fin admin hugo*/
