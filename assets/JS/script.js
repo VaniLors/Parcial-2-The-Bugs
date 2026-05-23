@@ -7,7 +7,7 @@ const mapaVentanas = {
     'btn-activos-fijos':    'ventana-activos-fijos',              // Rayman
     'btn-grupos':           'ventana-grupo-contable',             // Vanilors
     'btn-oficinas':         'ventana-oficinas',                   // Gustavo
-    'btn-reportes':         null,                                 // pendiente
+    'btn-reportes':         'ventana-seguridad',                                 // pendiente
     'btn-administradores':  'ventana-administracion-recursos',    // Alex
     'btn-sesion':           null,                                 // pendiente
     'btn-respaldos':        'ventana-transferencia',              // Vlady

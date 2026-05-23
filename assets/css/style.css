@@ -1010,18 +1010,6 @@ body {
 
 /*inicioseguridad critian*/
 
-.ventana {
-    width: 700px;
-    background-color: #f0f0f0;
-    border: 2px solid #808080;
-    box-shadow: 2px 2px 0 #fff inset;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
 .barra-negra {
     background: black;
     color: white;
