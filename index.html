@@ -1,458 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de Activos Fijos</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+
+    <!-- ===================== ENCABEZADO PRINCIPAL ===================== -->
+    <header class="header-principal">
         <h3>SISTEMAS DE ACTIVOS FIJOS</h3>
     </header>
 
-    <main>
+    <!-- ===================== IMAGEN PRINCIPAL ===================== -->
+    <main class="main-imagen">
         <div>
-            <img src="assets/img/vs.i.a.f.png" alt="">
+            <img src="assets/img/vs.i.a.f.png" alt="Logo Sistema">
         </div>
     </main>
 
-    <section>
+    <!-- ===================== SECCION MENU + INFO ===================== -->
+    <section class="seccion-principal">
+
+        <!-- Menu de botones -->
         <div class="menu-section">
-            <h1>MENU PRICIPAL</h1>
-            <button class="btn-menu">Activos Fijos</button>
-            <button class="btn-menu">Grupos y Auxiliares</button>
-            <button class="btn-menu">Oficinas y Responsables</button>
-            <button class="btn-menu">Generar Reportes</button>
-            <button class="btn-menu">Administradores</button>
-            <button class="btn-menu">Iniciar sesion</button>
-            <button class="btn-menu">Respaldos BD</button>
-            <button class="btn-menu">Administrar Unidad</button>
-            <button class="btn-menu">Localizar BD</button>
+            <h1>MENU PRINCIPAL</h1>
+            <button class="btn-menu" id="btn-activos-fijos">Activos Fijos</button>
+            <button class="btn-menu" id="btn-grupos">Grupos y Auxiliares</button>
+            <button class="btn-menu" id="btn-oficinas">Oficinas y Responsables</button>
+            <button class="btn-menu" id="btn-reportes">Generar Reportes</button>
+            <button class="btn-menu" id="btn-administradores">Administradores</button>
+            <button class="btn-menu" id="btn-sesion">Iniciar sesion</button>
+            <button class="btn-menu" id="btn-respaldos">Respaldos BD</button>
+            <button class="btn-menu" id="btn-unidad">Administrar Unidad</button>
+            <button class="btn-menu" id="btn-localizar">Localizar BD</button>
         </div>
-        <div>
-            <div>
+
+        <!-- Info de entidad y imagen -->
+        <div class="info-entidad">
+            <div class="info-fila">
                 <strong>ENTIDAD: </strong>
                 <span>821 </span>
-                <span> Administracion Autonoma para Obras Sanitarias Potosi</span>
+                <span>Administracion Autonoma para Obras Sanitarias Potosi</span>
             </div>
-            <div>
-                <strong> UNIDAD: </strong>
+            <div class="info-fila">
+                <strong>UNIDAD: </strong>
                 <span>UA01</span>
-                <span>Unidad de Archivos Fijos</span></div>
-            <img src="assets/img/casa-de-la-modena.png" alt="">
+                <span>Unidad de Archivos Fijos</span>
+            </div>
+            <img src="assets/img/casa-de-la-modena.png" alt="Imagen entidad">
         </div>
+
     </section>
-    <!--miparte alex-->
 
-    <div class="ventana_administracionderecursos">.
+    <!-- ===================== OVERLAY (fondo oscuro al abrir ventanas) ===================== -->
+    <div class="overlay" id="overlay"></div>
 
-        <div class="barra-sistema">ADMINISTRACION DE RECURSOS</div>
-        <div class="contenido">
-            <div class="titulo-seccion">ADMINISTRACION DE RECURSOS</div>
-            <div class="cuerpo">
-                <div class="columna-izq">
-                    <div class="grupo-cierre">
-                        <div class="grupo-titulo">CIERRE DE GESTION</div>
-                        <button class="btn-grupo">Cerrar Gestion</button>
-                        <button class="btn-grupo">Cambiar Gestion</button>
-                    </div>
-                    <div class="grupo-herramientas">
-                        <button class="btn-grupo">Importar/Exportar</button>
-                        <button class="btn-grupo">Indices UFV</button>
-                        <button class="btn-grupo">Seguridad</button>
-                        <button class="btn-grupo">Re-indexar</button>
-                        <button class="btn-grupo">Migrador</button>
-                    </div>
-                </div>
-                <div class="columna-der">
-                    <div class="campo-anio">
-                        <input type="text" class="input-anio" value="2013">
-                    </div>
-                    <div class="campo-scroll">
-                        <textarea class="textarea-der"></textarea>
-                        <div class="scrollbar-v-der">
-                            <div class="scroll-btn-d">▲</div>
-                            <div class="scroll-track-d"></div>
-                            <div class="scroll-btn-d">▼</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="barra-inferior">
-                <button class="btn-salir">Salir</button>
-            </div>
-        </div>
 
-        <div class="dialogo-foxpro">
-            <div class="fox-barra">
-                <span class="fox-titulo">Microsoft Visual FoxPro</span>
-                <button class="fox-cerrar">✕</button>
-            </div>
-            <div class="fox-cuerpo">
-                <div class="fox-icono">?</div>
-                <div class="fox-mensaje">Es usted el unico usuario del sistema</div>
-            </div>
-            <div class="fox-botones">
-                <button class="btn-fox btn-fox-activo">Sí</button>
-                <button class="btn-fox">No</button>
-            </div>
-        </div>
-    </div>
+    <!-- ===================================================================== -->
+    <!-- VENTANA: ACTIVOS FIJOS (Rayman)                                       -->
+    <!-- ===================================================================== -->
+    <div class="ventana" id="ventana-activos-fijos">
 
-    <!--hasta aqui alex-->
-
-
-
-
-
-
-
-
-
-    <script src="assets/JS/script.js"></script>
-
-
-<!--subiendo mi parte gustavo oficinas-->
-<div class="ventana" id="oficinas">
-<div class="window-container">
-    <div class="top-bar">OFICINA</div>
-    
-    <div class="header-blue">
-        <div class="unit-info">
-            UNIDAD: 0252<br>
-            Nivel Central
-        </div>
-        <div class="title-center">OFICINA</div>
-    </div>
-
-    <div class="form-section">
-        <div class="form-fields">
-            <div class="form-row">
-                <label>Oficina</label>
-                <div class="input-select-container">
-                    <input type="text" class="input-code" value="1" readonly>
-                    <select class="select-custom">
-                        <option>100 DIRECCION INLASA</option>
-                    </select>
-                </div>
-                <div class="status-label">ACTIVO</div>
-            </div>
-            
-            <div class="form-row" style="align-items: flex-start;">
-                <label>Observación</label>
-                <textarea class="textarea-observation"></textarea>
-            </div>
-        </div>
-
-        <div class="side-buttons">
-            <button class="btn-classic">Nuevo</button>
-            <button class="btn-classic">Modificar</button>
-            <button class="btn-classic">Activar</button>
-            <button class="btn-classic">Inactivar</button>
-        </div>
-    </div>
-
-    <div class="grid-section">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th style="width: 5%;">Cod.</th>
-                    <th style="width: 35%;">Responsable</th>
-                    <th style="width: 35%;">Cargo</th>
-                    <th style="width: 10%;">CI</th>
-                    <th style="width: 10%;">Expedido</th>
-                    <th style="width: 5%;">Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="filled-row">
-                    <td>1</td>
-                    <td>DRA. GLADYS QUIROGA</td>
-                    <td>DIRECTORA</td>
-                    <td></td>
-                    <td></td>
-                    <td>ACTIVO</td>
-                </tr>
-                <tr class="filled-row">
-                    <td>2</td>
-                    <td>DR. WALTER AGREDA COCA</td>
-                    <td>DIRECTOR GENERAL EJECUTIVO</td>
-                    <td></td>
-                    <td></td>
-                    <td>ACTIVO</td>
-                </tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="footer-actions">
-        <div class="bottom-btn-group-left">
-            <button class="btn-classic" style="min-width: 55px;">Activar</button>
-            <button class="btn-classic" style="min-width: 55px;">Inactivar</button>
-            <button class="btn-classic" style="min-width: 55px;">Nuevo</button>
-            <button class="btn-classic" style="min-width: 55px;">Modificar</button>
-            <button class="btn-classic" style="min-width: 55px; color: #000000; font-weight: bold;">Guardar</button>
-            <button class="btn-classic" style="min-width: 55px;">Deshacer</button>
-        </div>
-        
-        <button class="btn-classic btn-salir">Salir</button>
-    </div>
-</div>
-</div>
-<!--fin de mi parte gustavo oficinas-->
-
-
-<!--hugo adminsitracion inicio-->
-<div class="ventana_admi" id="administracion">
-
-    <!-- Barra superior -->
-
-
-    <!-- Encabezado -->
-
-
-    <!-- Información -->
-
-
-    <!-- Sección -->
-    <div class="contenedor-seccion">
-
-        <div class="barra-seccion">
-            Unidad Administrativa
-        </div>
-
-        <div class="titulo-seccion">
-            ADMINISTRACION UNIDAD ADMINISTRATIVA
-        </div>
-
-        <!-- Contenido -->
-        <div class="contenido">
-
-            <!-- Iconos -->
-            <div class="menu-lateral">
-
-                <div class="icono"></div>
-                <div class="icono"></div>
-                <div class="icono"></div>
-                <div class="icono"></div>
-                <div class="icono"></div>
-
-            </div>
-
-            <!-- Tabla -->
-            <div class="tabla-contenedor">
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>UNIDAD</th>
-                            <th>DESCRIPCION</th>
-                            <th>CIUDAD</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </div>
-
-        <!-- Botones -->
-        <div class="botones">
-
-            <button>Nuevo</button>
-            <button>Editar</button>
-            <button>Eliminar</button>
-            <button>Seleccionar</button>
-            <button>Salir</button>
-
-        </div>
-
-    </div>
-
-</div>
-
-    <!--hasta aqui-->
-
-
-<!--vlady tranferencia-->
-<div class="ventana_transferencia">
-        <header>
-            <h3>TRANSFERENCIA</h3>
-        </header>
-
-        <main>
-            <h1>TRANSFERENCIA</h1>
-        </main>
-        
-        <div class="formulario">
-            <div class="fila">
-                <label>Unidad Actual</label>
-                <input type="text" value="0252 - Nivel Central" class="input-flat" readonly>
-            </div>
-            
-            <div class="fila">
-                <label>Oficina Actual</label>
-                <input type="text" value="100 DIRECCION" class="input-flat" readonly>
-            </div>
-
-            <div class="fila">
-                <label>Responsable Actual</label>
-                <input type="text" value="DR. WALTER AGREDA CO" class="input-flat" readonly>
-            </div>
-            
-            <div class="fila">
-                <label>Nueva Unidad</label>
-                <select class="select-sistema">
-                    <option>Nivel Central</option>
-                    <option>Unidad Secundaria</option>
-                </select>
-            </div>
-            
-            <div class="fila">
-                <label>Nueva Oficina</label>
-                <select class="select-sistema">
-                    <option></option>
-                    <option>100 DIRECCION INLASA</option>
-                </select>
-            </div>
-            
-            <div class="fila">
-                <label>Nuevo Responsable</label>
-                <select class="select-sistema input-foco-azul">
-                    <option></option>
-                    <option>DR. WALTER AGREDA COCA</option>
-                </select>
-            </div>
-            
-            <div class="fila">
-                <label>Auxiliar</label>
-                <select class="select-sistema">
-                    <option></option>
-                    <option>AUXILIAR DE OFICINA</option>
-                </select>
-            </div>
-        </div> 
-
-        <div class="btn">
-            <button class="btn-sistema underline">Aceptar</button>
-            <button class="btn-sistema underline">Cancelar</button>  
-        </div>
-    </div>
-
-
-<!-- fin vlady transferencia-->
-
-<!--subiendo grupo contable vanilors-->
-
-
-<div class="ventana_grupocontable"></div>
-<div class="container">
-    <div class="header">
-        <h2>GRUPO CONTABLE</h2>
-    </div>
-
-    <div class="form-section">
-        <div class="row">
-            <label>Grupo</label>
-            <input type="text" value="2">
-
-            <label>Nombre</label>
-            <select>
-                <option>AUXILIARES CREADOR POR EL USUARIO</option>
-            </select>
-        </div>
-
-
-        <div class="row">
-            <label>Vida Útil</label>
-            <input type="text" value="10">
-
-            <label class="agrandar">Observaciones</label>
-            <input type="text">
-        </div>
-
-        <div class="row checkbox">
-            <label>Deprecia</label>
-            <input type="checkbox" checked>
-        </div>
-    </div>
-
-    <div class="table-section">
-        <table>
-            <thead>
-                <tr>
-                    <th>CÓDIGO</th>
-                    <th>NOMBRE AUXILIAR</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1</td><td>ALEX SANDER LOPEZ</td></tr>
-                <tr><td>2</td><td></td></tr>
-                <tr><td>3</td><td></td></tr>
-                <tr><td>4</td><td></td></tr>
-                <tr><td>5</td><td></td></tr>
-                <tr><td>6</td><td></td></tr>
-                <tr><td>7</td><td></td></tr>
-                <tr><td>8</td><td></td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="buttons">
-        <button>Nuevo</button>
-        <button>Modificar</button>
-        <button>Guardar</button>
-        <button>Eliminar</button>
-        <button>Salir</button>
-    </div>
-</div>
-
-
-
-
-
-<!--fin de grupo contable vanilors-->
-
-
-
-
-
-</body>
-</html>
-
-<!--agregando mi parte activos fijos-->
-<div class="ventana_activosfijos" id="activosfijos">
         <div class="barra-sistema">SISTEMA DE ACTIVOS FIJOS</div>
         <div class="barra-sub">Unidad Administrativa</div>
-        <div class="contenido">
-            <div class="titulo-seccion">ADMINISTRACION UNIDAD ADMINISTRATIVA</div>
-            <div class="tabla-container">
-                <div class="tabla-scroll-area">
-                    <table class="tabla">
+
+        <div class="contenido-ventana">
+            <div class="titulo-ventana">ACTIVOS FIJOS</div>
+
+            <div class="tabla-af-container">
+                <div class="tabla-af-scroll">
+                    <table class="tabla-af">
                         <thead>
                             <tr>
                                 <th class="col-unidad">UNIDAD</th>
@@ -461,7 +80,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="fila-seleccionada">
+                            <tr class="fila-seleccionada-af">
                                 <td>025</td>
                                 <td>GACETA OFICIAL DE BOLIVIA</td>
                                 <td>LA PAZ</td>
@@ -476,24 +95,386 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="scrollbar-v">
-                    <div class="scroll-btn">▲</div>
-                    <div class="scroll-track-v"><div class="scroll-thumb-v"></div></div>
-                    <div class="scroll-btn">▼</div>
+                <div class="scrollbar-v-af">
+                    <div class="scroll-btn-af">▲</div>
+                    <div class="scroll-track-af"></div>
+                    <div class="scroll-btn-af">▼</div>
                 </div>
             </div>
-            <div class="scrollbar-h-row">
-                <div class="scroll-btn-h">◄</div>
-                <div class="scroll-track-h"><div class="scroll-thumb-h"></div></div>
-                <div class="scroll-btn-h">►</div>
+
+            <div class="scrollbar-h-af">
+                <div class="scroll-btn-h-af">◄</div>
+                <div class="scroll-track-h-af"></div>
+                <div class="scroll-btn-h-af">►</div>
             </div>
         </div>
-        <div class="barra-botones">
-            <button class="btn">Nuevo</button>
-            <button class="btn">Editar</button>
-            <button class="btn">Eliminar</button>
-            <button class="btn">Seleccionar</button>
-            <button class="btn">Salir</button>
+
+        <div class="botones-admin">
+            <button class="btn-admin">Nuevo</button>
+            <button class="btn-admin">Editar</button>
+            <button class="btn-admin">Eliminar</button>
+            <button class="btn-admin">Seleccionar</button>
+            <button class="btn-admin" onclick="cerrarVentana('ventana-activos-fijos')">Salir</button>
         </div>
+
     </div>
-<!--fin de mi parte activos fijos-->
+
+
+    <!-- ===================================================================== -->
+    <!-- VENTANA: ADMINISTRACION DE RECURSOS (Alex)                            -->
+    <!-- ===================================================================== -->
+    <div class="ventana" id="ventana-administracion-recursos">
+
+        <div class="barra-sistema">ADMINISTRACION DE RECURSOS</div>
+
+        <div class="contenido-ventana">
+            <div class="titulo-ventana">ADMINISTRACION DE RECURSOS</div>
+
+            <div class="cuerpo-ventana">
+
+                <!-- Columna izquierda: botones -->
+                <div class="columna-izq">
+                    <div class="grupo-cierre">
+                        <div class="grupo-titulo">CIERRE DE GESTION</div>
+                        <button class="btn-grupo">Cerrar Gestion</button>
+                        <button class="btn-grupo">Cambiar Gestion</button>
+                    </div>
+                    <div class="grupo-herramientas">
+                        <button class="btn-grupo">Importar/Exportar</button>
+                        <button class="btn-grupo">Indices UFV</button>
+                        <button class="btn-grupo">Seguridad</button>
+                        <button class="btn-grupo">Re-indexar</button>
+                        <button class="btn-grupo">Migrador</button>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: año y textarea -->
+                <div class="columna-der">
+                    <div class="campo-anio">
+                        <input type="text" class="input-anio" value="2013">
+                    </div>
+                    <div class="campo-scroll">
+                        <textarea class="textarea-der"></textarea>
+                        <div class="scrollbar-v-der">
+                            <div class="scroll-btn-d">▲</div>
+                            <div class="scroll-track-d"></div>
+                            <div class="scroll-btn-d">▼</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="barra-inferior">
+                <button class="btn-salir-ventana" onclick="cerrarVentana('ventana-administracion-recursos')">Salir</button>
+            </div>
+        </div>
+
+        <!-- Dialogo FoxPro superpuesto -->
+        <div class="dialogo-foxpro">
+            <div class="fox-barra">
+                <span class="fox-titulo">Microsoft Visual FoxPro</span>
+                <button class="fox-cerrar">✕</button>
+            </div>
+            <div class="fox-cuerpo">
+                <div class="fox-icono">?</div>
+                <div class="fox-mensaje">Es usted el unico usuario del sistema</div>
+            </div>
+            <div class="fox-botones">
+                <button class="btn-fox btn-fox-activo">Sí</button>
+                <button class="btn-fox">No</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================================== -->
+    <!-- VENTANA: OFICINAS Y RESPONSABLES (Gustavo)                            -->
+    <!-- ===================================================================== -->
+    <div class="ventana" id="ventana-oficinas">
+
+        <div class="top-bar-ventana">OFICINA</div>
+
+        <div class="header-blue">
+            <div class="unit-info">
+                UNIDAD: 0252<br>
+                Nivel Central
+            </div>
+            <div class="title-center">OFICINA</div>
+        </div>
+
+        <div class="form-section-oficina">
+            <div class="form-fields">
+
+                <div class="form-row">
+                    <label class="label-oficina">Oficina</label>
+                    <div class="input-select-container">
+                        <input type="text" class="input-code" value="1" readonly>
+                        <select class="select-custom">
+                            <option>100 DIRECCION INLASA</option>
+                        </select>
+                    </div>
+                    <div class="status-label">ACTIVO</div>
+                </div>
+
+                <div class="form-row" style="align-items: flex-start;">
+                    <label class="label-oficina">Observación</label>
+                    <textarea class="textarea-observation"></textarea>
+                </div>
+
+            </div>
+
+            <div class="side-buttons">
+                <button class="btn-classic">Nuevo</button>
+                <button class="btn-classic">Modificar</button>
+                <button class="btn-classic">Activar</button>
+                <button class="btn-classic">Inactivar</button>
+            </div>
+        </div>
+
+        <div class="grid-section">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 5%;">Cod.</th>
+                        <th style="width: 35%;">Responsable</th>
+                        <th style="width: 35%;">Cargo</th>
+                        <th style="width: 10%;">CI</th>
+                        <th style="width: 10%;">Expedido</th>
+                        <th style="width: 5%;">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="filled-row">
+                        <td>1</td>
+                        <td>DRA. GLADYS QUIROGA</td>
+                        <td>DIRECTORA</td>
+                        <td></td>
+                        <td></td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr class="filled-row">
+                        <td>2</td>
+                        <td>DR. WALTER AGREDA COCA</td>
+                        <td>DIRECTOR GENERAL EJECUTIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-actions-oficina">
+            <div class="bottom-btn-group-left">
+                <button class="btn-classic">Activar</button>
+                <button class="btn-classic">Inactivar</button>
+                <button class="btn-classic">Nuevo</button>
+                <button class="btn-classic">Modificar</button>
+                <button class="btn-classic" style="font-weight: bold;">Guardar</button>
+                <button class="btn-classic">Deshacer</button>
+            </div>
+            <button class="btn-classic btn-salir-oscuro" onclick="cerrarVentana('ventana-oficinas')">Salir</button>
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================================== -->
+    <!-- VENTANA: ADMINISTRACION UNIDAD ADMINISTRATIVA (Hugo)                  -->
+    <!-- ===================================================================== -->
+    <div class="ventana" id="ventana-admin-unidad">
+
+        <div class="barra-sistema">Unidad Administrativa</div>
+
+        <div class="titulo-ventana">ADMINISTRACION UNIDAD ADMINISTRATIVA</div>
+
+        <div class="contenido-ventana">
+
+            <div class="menu-lateral">
+                <div class="icono-lateral"></div>
+                <div class="icono-lateral"></div>
+                <div class="icono-lateral"></div>
+                <div class="icono-lateral"></div>
+                <div class="icono-lateral"></div>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table class="tabla-admin">
+                    <thead>
+                        <tr>
+                            <th>UNIDAD</th>
+                            <th>DESCRIPCION</th>
+                            <th>CIUDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="botones-admin">
+            <button class="btn-admin">Nuevo</button>
+            <button class="btn-admin">Editar</button>
+            <button class="btn-admin">Eliminar</button>
+            <button class="btn-admin">Seleccionar</button>
+            <button class="btn-admin" onclick="cerrarVentana('ventana-admin-unidad')">Salir</button>
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================================== -->
+    <!-- VENTANA: TRANSFERENCIA (Vlady)                                        -->
+    <!-- ===================================================================== -->
+    <div class="ventana" id="ventana-transferencia" style="width:420px;">
+
+        <div class="barra-sistema">TRANSFERENCIA</div>
+
+        <div class="titulo-ventana">TRANSFERENCIA</div>
+
+        <div class="formulario-transferencia">
+
+            <div class="fila-form">
+                <label class="label-form">Unidad Actual</label>
+                <input type="text" value="0252 - Nivel Central" class="input-flat" readonly>
+            </div>
+
+            <div class="fila-form">
+                <label class="label-form">Oficina Actual</label>
+                <input type="text" value="100 DIRECCION" class="input-flat" readonly>
+            </div>
+
+            <div class="fila-form">
+                <label class="label-form">Responsable Actual</label>
+                <input type="text" value="DR. WALTER AGREDA CO" class="input-flat" readonly>
+            </div>
+
+            <div class="fila-form">
+                <label class="label-form">Nueva Unidad</label>
+                <select class="select-sistema">
+                    <option>Nivel Central</option>
+                    <option>Unidad Secundaria</option>
+                </select>
+            </div>
+
+            <div class="fila-form">
+                <label class="label-form">Nueva Oficina</label>
+                <select class="select-sistema">
+                    <option></option>
+                    <option>100 DIRECCION INLASA</option>
+                </select>
+            </div>
+
+            <div class="fila-form">
+                <label class="label-form">Nuevo Responsable</label>
+                <select class="select-sistema input-foco-azul">
+                    <option></option>
+                    <option>DR. WALTER AGREDA COCA</option>
+                </select>
+            </div>
+
+            <div class="fila-form">
+                <label class="label-form">Auxiliar</label>
+                <select class="select-sistema">
+                    <option></option>
+                    <option>AUXILIAR DE OFICINA</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="btns-transferencia">
+            <button class="btn-sistema">Aceptar</button>
+            <button class="btn-sistema" onclick="cerrarVentana('ventana-transferencia')">Cancelar</button>
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================================== -->
+    <!-- VENTANA: GRUPO CONTABLE (Vanilors)                                    -->
+    <!-- ===================================================================== -->
+    <div class="ventana" id="ventana-grupo-contable">
+
+        <div class="titulo-grupo-contable">GRUPO CONTABLE</div>
+
+        <div class="form-grupo">
+
+            <div class="fila-grupo">
+                <label class="label-grupo">Grupo</label>
+                <input type="text" class="input-grupo" value="2">
+                <label class="label-grupo">Nombre</label>
+                <select class="select-grupo">
+                    <option>AUXILIARES CREADO POR EL USUARIO</option>
+                </select>
+            </div>
+
+            <div class="fila-grupo">
+                <label class="label-grupo">Vida Útil</label>
+                <input type="text" class="input-grupo" value="10">
+                <label class="label-grupo">Observaciones</label>
+                <input type="text" class="input-grupo input-largo">
+            </div>
+
+            <div class="fila-grupo">
+                <label class="label-grupo">Deprecia</label>
+                <input type="checkbox" checked>
+            </div>
+
+        </div>
+
+        <div class="tabla-grupo">
+            <table class="tabla-gc">
+                <thead>
+                    <tr>
+                        <th>CÓDIGO</th>
+                        <th>NOMBRE AUXILIAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>ALEX SANDER LOPEZ</td></tr>
+                    <tr><td>2</td><td></td></tr>
+                    <tr><td>3</td><td></td></tr>
+                    <tr><td>4</td><td></td></tr>
+                    <tr><td>5</td><td></td></tr>
+                    <tr><td>6</td><td></td></tr>
+                    <tr><td>7</td><td></td></tr>
+                    <tr><td>8</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="btns-grupo">
+            <button class="btn-gc">Nuevo</button>
+            <button class="btn-gc">Modificar</button>
+            <button class="btn-gc">Guardar</button>
+            <button class="btn-gc">Eliminar</button>
+            <button class="btn-gc" onclick="cerrarVentana('ventana-grupo-contable')">Salir</button>
+        </div>
+
+    </div>
+
+
+    <!-- JS al final del body -->
+    <script src="assets/JS/script.js"></script>
+
+</body>
+</html>
