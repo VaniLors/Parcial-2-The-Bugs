@@ -1005,3 +1005,353 @@ body {
 .btn-gc:hover {
     background: #1f4e79;
 }
+
+
+
+/*inicioseguridad critian*/
+
+.ventana {
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.barra-negra {
+    background: black;
+    color: white;
+    font-size: 11px;
+    padding: 2px 8px;
+    font-weight: bold;
+}
+
+.header-azul {
+    background: linear-gradient(to bottom, #7fb2d8, #2c5f88);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.btn-win {
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+    border: 1px solid #707070;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.btn-win:active {
+    background: #dcdcdc;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.btn-win:disabled {
+    color: #888888;
+    background: #e4e4e4;
+    border: 1px solid #bcbcbc;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.barra-botones, .barra-botones-grupo, .barra-botones-seguridad {
+    display: flex;
+    background-color: #d4d0c8;
+    border-top: 1px solid #808080;
+    box-sizing: border-box;
+}
+
+.barra-botones {
+    justify-content: center;
+    gap: 2px;
+    padding: 10px;
+}
+
+.barra-unidad-sistema {
+    display: flex;
+    background-color: #31659c;
+    color: #ffffff;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: sans-serif;
+    gap: 6px;
+    align-items: center;
+}
+
+.descripcion-unidad {
+    font-weight: normal;
+    margin-left: 14px;
+}
+
+.contenido-recuadro-grupo, .recuadro-externo-seguridad {
+    border: 1px solid #7a9db9;
+    background-color: #f4f4f4;
+    margin: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-recuadro-grupo {
+    padding: 16px;
+}
+
+.seccion-controles-superiores {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 4px;
+}
+
+.columna-izquierda-fija {
+    width: 85px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.columna-derecha-flexible {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bloque-campo-formulario, .campo-fila-seg, .campo-inline-seg {
+    display: flex;
+    align-items: center;
+}
+
+.texto-etiqueta-sistema, .label-azul-sistema {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.texto-etiqueta-sistema {
+    color: #1e3d59;
+    width: 95px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.columna-izquierda-fija .texto-etiqueta-sistema {
+    width: 50px;
+}
+
+.caja-texto-sistema, .select-menu-sistema, .caja-textarea-sistema, .input-azul-sistema, .textarea-azul-sistema {
+    border: 1px solid #7a9db9;
+    padding: 3px 4px;
+    font-size: 11px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.caja-texto-sistema, .select-menu-sistema, .caja-textarea-sistema {
+    background-color: #ffffe1;
+    color: #000000;
+}
+
+.ancho-codigo-grupo {
+    width: 32px;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.contenedor-select-desplegable, .select-menu-sistema, .caja-textarea-sistema, .input-expandible-total {
+    width: 100%;
+}
+
+.select-menu-sistema {
+    height: 22px;
+}
+
+.caja-textarea-sistema {
+    height: 48px;
+    resize: none;
+}
+
+.bloque-depreciacion-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 2px 0 10px 0;
+}
+
+.bloque-depreciacion-checkbox .texto-etiqueta-sistema {
+    width: auto;
+}
+
+.marco-tabla-datos {
+    border: 1px solid #7a9db9;
+    max-height: 175px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+}
+
+.tabla-auxiliares-sistema {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.tabla-auxiliares-sistema th {
+    background-color: #2a5d84;
+    color: #ffffff;
+    padding: 4px 6px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    border-right: 1px solid #7a9db9;
+}
+
+.tabla-auxiliares-sistema td {
+    border-right: 1px solid #a4bed4;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 3px 6px;
+    color: #000000;
+}
+
+.tabla-auxiliares-sistema tbody tr:nth-child(even) {
+    background-color: #f7f9fa;
+}
+
+.tabla-auxiliares-sistema tbody tr:first-child td {
+    background-color: #d2e5f5;
+}
+
+.celda-encabezado-codigo {
+    width: 100px;
+}
+
+.barra-botones-grupo {
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+}
+
+.barra-botones-grupo .btn-win {
+    padding: 4px 0;
+    width: 82px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.recuadro-externo-seguridad {
+    padding: 20px 24px;
+    border-radius: 4px;
+    gap: 14px;
+}
+
+.fila-superior-usuario {
+    display: flex;
+    border: 1px solid #a0b0c0;
+    padding: 10px 14px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+}
+
+.campo-inline-seg {
+    gap: 8px;
+}
+
+.campo-inline-seg.flex-final-derecha {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.campo-fila-seg {
+    box-sizing: border-box;
+}
+
+.campo-fila-seg.align-inicio-top {
+    align-items: flex-start;
+}
+
+.p-top-4 {
+    padding-top: 4px;
+}
+
+.label-azul-sistema {
+    color: #1a3a52;
+}
+
+.ancho-etiqueta-fijo {
+    width: 150px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.input-azul-sistema, .textarea-azul-sistema {
+    background-color: #e2efff;
+    color: #000;
+}
+
+.ancho-input-usuario {
+    width: 95px;
+}
+
+.ancho-input-password {
+    width: 145px;
+}
+
+.input-expandible-total {
+    flex-grow: 1;
+}
+
+.textarea-azul-sistema {
+    height: 52px;
+    resize: none;
+}
+
+.grupo-seleccion-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-label-sistema {
+    font-size: 11px;
+    color: #444;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.barra-botones-seguridad {
+    justify-content: space-between;
+    padding: 10px 14px;
+}
+
+.barra-botones-seguridad .btn-win {
+    padding: 4px 0;
+    width: 70px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.barra-botones-seguridad .btn-win.activo {
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+
+
+/*final seguridad cristian*/
