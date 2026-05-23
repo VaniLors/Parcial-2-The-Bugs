@@ -9,7 +9,7 @@ const mapaVentanas = {
     'btn-oficinas':         'ventana-oficinas',                   // Gustavo
     'btn-reportes':         'ventana-seguridad',                                 // pendiente
     'btn-administradores':  'ventana-administracion-recursos',    // Alex
-    'btn-sesion':           null,                                 // pendiente
+    'btn-sesion':           'instalacion-entidad',                                 // pendiente
     'btn-respaldos':        'ventana-transferencia',              // Vlady
     'btn-unidad':           'ventana-admin-unidad',               // Hugo
     'btn-localizar':        'ventana-grupo-contable',             // Vanilors
