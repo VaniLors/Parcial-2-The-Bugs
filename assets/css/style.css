@@ -275,3 +275,171 @@ section :last-child div{
     box-shadow: none;
 }
 /*fin del css oficinas*/
+
+
+/*inicio admin hugo*/
+.ventana_admi{
+    display: none;
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+    margin: auto;
+    padding-bottom:20px;
+}
+
+/* BARRA SUPERIOR */
+
+/* ENCABEZADO */
+.encabezado{
+    height:95px;
+    background:linear-gradient(to bottom,#4ca6ff,#00508f);
+    color:white;
+    padding-left:20px;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    font-size:55px;
+    font-weight:bold;
+    letter-spacing:6px;
+}
+
+.subtitulo{
+    position:absolute;
+    left:25px;
+    top:62px;
+    font-size:18px;
+    font-style:italic;
+}
+
+/* INFORMACION */
+.informacion{
+    padding:15px 20px;
+    font-size:14px;
+    color:#444;
+}
+
+.fila{
+    margin-bottom:6px;
+}
+
+.titulo{
+    font-weight:bold;
+    color:#0d3f72;
+}
+
+.valor{
+    margin-left:8px;
+}
+
+.ministerio{
+    margin-left:25px;
+}
+
+/* CONTENEDOR */
+.contenedor-seccion{
+    margin:0 ;
+    border:1px solid #8a8a8a;
+    background:#efefef;
+}
+
+/* BARRA */
+.barra-seccion{
+    background:linear-gradient(to bottom,#333,#111);
+    color:white;
+    padding:5px 10px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* TITULO */
+.titulo-seccion{
+    background:linear-gradient(to bottom,#3f92d7,#0b4f89);
+    color:white;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    padding:12px;
+    border-top:1px solid #78bfff;
+}
+
+/* CONTENIDO */
+.contenido{
+    display:flex;
+    padding:18px;
+}
+
+/* MENU */
+.menu-lateral{
+    width:45px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-right:15px;
+}
+
+.icono{
+    width:35px;
+    height:35px;
+    border:1px solid #888;
+    background:linear-gradient(to bottom,#ffffff,#d7d7d7);
+}
+
+/* TABLA */
+.tabla-contenedor{
+    flex:1;
+    background:white;
+    border:1px solid #666;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#004d97;
+    color:white;
+}
+
+th{
+    border:1px solid #555;
+    padding:6px;
+    font-size:14px;
+}
+
+td{
+    border:1px solid #999;
+    height:28px;
+}
+
+/* BOTONES */
+.botones{
+    width:85%;
+    margin:20px auto;
+    padding:15px;
+    border:2px solid #a0aebb;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-around;
+    background:#f9f9f9;
+}
+
+button{
+    width:100px;
+    height:35px;
+    border:2px solid #666;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    background:linear-gradient(to bottom,#006cae,#002b45);
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+/*hasta aqui*/
+/*fin admin hugo*/
