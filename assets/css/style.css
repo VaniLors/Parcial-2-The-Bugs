@@ -66,6 +66,19 @@ section :last-child div{
 
 
 
+/*stylos de actviso fijos rayman*/
+.ventana_activosfijos {
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+    margin: auto;
+}
+
+.barra-sistema {
+    background: linear-gradient(to right, #0a246a, #a6b5d7);
+
+
 /*alex*/
 
 
@@ -78,7 +91,7 @@ section :last-child div{
     background-color: #f0f0f0;
     border: 2px solid #808080;
     box-shadow: 2px 2px 0 #fff inset;
-=======
+
 /*inicio del css oficinas*/
 .ventana {
     display: none;
@@ -95,12 +108,102 @@ section :last-child div{
 }
 
 .barra-sistema {
-    background: #000000; 
+    background: #000000;
     color: #ffffff;
     font-size: 11px;
     font-weight: bold;
     padding: 3px 6px;
 }
+
+
+.barra-sub {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 2px 6px;
+}
+
+.contenido {
+    padding: 12px 14px 8px;
+}
+
+.titulo-seccion {
+    background: linear-gradient(to right, #0a246a, #a6b5d7);
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.tabla-container {
+    display: flex;
+    border: 2px inset #808080;
+    background-color: #ffffff;
+}
+
+.tabla-scroll-area {
+    flex: 1;
+    overflow: hidden;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tabla thead tr th {
+    background: linear-gradient(to bottom, #4a7abf, #2a5a9f);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 6px;
+    border-right: 1px solid #6a9acf;
+}
+
+.tabla thead tr th:last-child {
+    border-right: none;
+}
+
+.col-unidad {
+    width: 18%;
+}
+
+.col-descripcion {
+    width: 55%;
+}
+
+.col-ciudad {
+    width: 27%;
+}
+
+.tabla tbody tr td {
+    font-size: 11px;
+    padding: 3px 6px;
+    border-bottom: 1px solid #c8d8f0;
+    border-right: 1px solid #c8d8f0;
+    height: 20px;
+    color: #000;
+}
+
+.tabla tbody tr td:last-child {
+    border-right: none;
+}
+
+.tabla tbody tr:hover td {
+    background-color: #e8f0ff;
+}
+
+.fila-seleccionada td {
+    background-color: #2a5abf !important;
+    color: #ffffff !important;
+}
+
+.scrollbar-v {
 
 .contenido {
     padding: 0 0 0 3;
@@ -225,6 +328,7 @@ section :last-child div{
 }
 
 .scrollbar-v-der {
+
     width: 16px;
     display: flex;
     flex-direction: column;
@@ -232,14 +336,92 @@ section :last-child div{
     border-left: 1px solid #808080;
 }
 
+
+.scroll-btn {
+    width: 16px;
+    height: 16px;
+
 .scroll-btn-d {
     width: 16px;
     height: 14px;
+
     background-color: #d4d0c8;
     border: 1px outset #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 7px;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: #000;
+}
+
+.scroll-track-v {
+    flex: 1;
+    background-color: #c8c4bc;
+    position: relative;
+}
+
+.scroll-thumb-v {
+    width: 14px;
+    height: 20px;
+    background-color: #d4d0c8;
+    border: 1px outset #ffffff;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
+.scrollbar-h-row {
+    display: flex;
+    height: 16px;
+    background-color: #d4d0c8;
+    border-top: 1px solid #808080;
+    margin-right: 0;
+}
+
+.scroll-btn-h {
+    width: 16px;
+    height: 16px;
+    background-color: #d4d0c8;
+    border: 1px outset #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: #000;
+}
+
+.scroll-track-h {
+    flex: 1;
+    background-color: #c8c4bc;
+    position: relative;
+}
+
+.scroll-thumb-h {
+    width: 20px;
+    height: 14px;
+    background-color: #d4d0c8;
+    border: 1px outset #ffffff;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+.barra-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 8px;
+    background-color: #f0f0f0;
+}
+
+.btn {
+
     font-size: 6px;
     cursor: pointer;
     color: #000;
@@ -365,6 +547,7 @@ section :last-child div{
 }
 
 .btn-fox {
+
     background-color: #f0f0f0;
     border-top: 2px solid #ffffff;
     border-left: 2px solid #ffffff;
@@ -372,6 +555,19 @@ section :last-child div{
     border-bottom: 2px solid #808080;
     font-size: 11px;
     font-family: Tahoma, Arial, sans-serif;
+
+    padding: 3px 14px;
+    cursor: pointer;
+    color: #000;
+    min-width: 80px;
+}
+
+.btn:hover {
+    background-color: #e8e8e8;
+}
+
+.btn:active {
+
     padding: 3px 0;
     cursor: pointer;
     color: #000;
@@ -383,11 +579,15 @@ section :last-child div{
 }
 
 .btn-fox:active {
+
     border-top: 2px solid #808080;
     border-left: 2px solid #808080;
     border-right: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
 }
+
+
+/*style de actviso fijos rayman*/
 
 .btn-fox-activo {
     border: 2px solid #000080;
@@ -401,7 +601,7 @@ section :last-child div{
 
 
 /*hadsta aqui alex*/
-=======
+
 }
 
 .window-container {
