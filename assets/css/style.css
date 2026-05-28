@@ -78,7 +78,8 @@ section :last-child div{
     background-color: #f0f0f0;
     border: 2px solid #808080;
     box-shadow: 2px 2px 0 #fff inset;
-=======
+
+
 /*inicio del css oficinas*/
 .ventana {
     display: none;
@@ -401,7 +402,6 @@ section :last-child div{
 
 
 /*hadsta aqui alex*/
-=======
 }
 
 .window-container {
@@ -771,7 +771,8 @@ button:hover{
 
 
 /*vlady transferencia*/
-.ventana_transferencia{
+.ventana-transferencia{
+    
     width: 700px;
     background-color: #f0f0f0;
     border: 2px solid #808080;
@@ -780,8 +781,6 @@ button:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
 }
 
 header {
