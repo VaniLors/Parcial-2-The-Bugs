@@ -100,6 +100,12 @@ body {
    ===================================================================== */
 .overlay {
     display: none;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+
+
+/*inicio del css oficinas*/
     position: fixed;
     top: 0;
     left: 0;
@@ -112,6 +118,7 @@ body {
 /* =====================================================================
    VENTANAS MODALES - BASE COMUN
    ===================================================================== */
+
 .ventana {
     display: none;
     position: fixed;
@@ -245,8 +252,8 @@ body {
 }
 
 .fila-seleccionada-af td {
-    background-color: #2a5abf !important;
-    color: #ffffff !important;
+    background-color: #2a5abf ;
+    color: #ffffff ;
 }
 
 .scrollbar-v-af {
@@ -557,6 +564,21 @@ body {
 .btn-fox-activo {
     border: 2px solid #000080;
 }
+
+
+
+/*hadsta aqui alex*/
+}
+
+.window-container {
+    border: 2px solid #808080;
+    width: 800px;
+    max-width: 100%;
+    background-color: #F0F0F0;
+    padding: 1px;
+}
+
+.top-bar {
 
 /* =====================================================================
    VENTANA: OFICINAS Y RESPONSABLES (Gustavo)
@@ -971,6 +993,18 @@ body {
     border-collapse: collapse;
 }
 
+
+/*vlady transferencia*/
+.ventana-transferencia{
+    
+    width: 700px;
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 0 #fff inset;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 .tabla-gc thead {
     background: #3b7bbf;
     color: white;
@@ -989,6 +1023,7 @@ body {
     justify-content: space-around;
     padding: 10px;
     background: #ddd;
+
 }
 
 .btn-gc {
