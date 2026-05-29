@@ -63,61 +63,72 @@
     <!-- ===================================================================== -->
     <div class="ventana" id="ventana-activos-fijos">
 
-        <div class="barra-sistema">ADIMNISTRACION UNIDAD ADMINISTRATIVA</div>
-        <div class="barra-sub">Unidad Administrativa</div>
 
-        <div class="contenido-ventana">
-            <div class="titulo-ventana">ACTIVOS FIJOS</div>
+    <!-- Barra superior negra -->
+    <div class="barra-top">INGRESE SU IDENTIFICACION</div>
 
-            <div class="tabla-af-container">
-                <div class="tabla-af-scroll">
-                    <table class="tabla-af">
-                        <thead>
-                            <tr>
-                                <th class="col-unidad">UNIDAD</th>
-                                <th class="col-descripcion">DESCRIPCION</th>
-                                <th class="col-ciudad">CIUDAD</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="fila-seleccionada-af">
-                                <td>025</td>
-                                <td>GACETA OFICIAL DE BOLIVIA</td>
-                                <td>LA PAZ</td>
-                            </tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="scrollbar-v-af">
-                    <div class="scroll-btn-af">▲</div>
-                    <div class="scroll-track-af"></div>
-                    <div class="scroll-btn-af">▼</div>
-                </div>
-            </div>
+    <!-- Header con logo y título -->
+    <div class="header">
+      <!-- Bandera Bolivia simulada -->
+      <div class="bandera">
+        <div class="banda roja"></div>
+        <div class="banda amarilla"></div>
+        <div class="banda verde"></div>
+      </div>
+      <!-- Título VSIAF -->
+      <div class="header-texto">
+        <div class="titulo-vsiaf">V.S.I.A.F</div>
+        <div class="subtitulo-vsiaf">Sistema de Activos Fijos</div>
+      </div>
+    </div>
 
-            <div class="scrollbar-h-af">
-                <div class="scroll-btn-h-af">◄</div>
-                <div class="scroll-track-h-af"></div>
-                <div class="scroll-btn-h-af">►</div>
-            </div>
+    <!-- Cuerpo gris claro -->
+    <div class="cuerpo-login-principal">
+
+      <!-- Panel Login -->
+      <div class="panel-login">
+        <div class="login-titulo">Login <span class="linea-titulo"></span></div>
+
+        <div class="fila">
+          <label class="etiqueta">Nombre del Usuario:</label>
+          <input type="text" class="input-login-principal" value="admin" />
         </div>
 
-        <div class="botones-admin">
-            <button class="btn-admin">Nuevo</button>
-            <button class="btn-admin">Editar</button>
-            <button class="btn-admin">Eliminar</button>
-            <button class="btn-admin">Seleccionar</button>
-            <button class="btn-admin" onclick="cerrarVentana('ventana-activos-fijos')">Salir</button>
+        <div class="fila-password">
+          <label class="etiqueta">Contraseña:</label>
+          <input  type="password" class="input-login-principal" value="12345" />
         </div>
+
+        <div class="fila-nota">
+          <span class="nota">NOTA: Es sensible al contexto</span>
+          <button class="btn-aceptar">Aceptar</button>
+        </div>
+      </div>
 
     </div>
+
+    <!-- Footer azul oscuro -->
+    <div class="footer">
+      <p>vSIAF versión 2.0</p>
+      <p>Copyright © 1999-2012 DGSGIF</p>
+      <p>Todos los derechos reservados</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- ===================================================================== -->

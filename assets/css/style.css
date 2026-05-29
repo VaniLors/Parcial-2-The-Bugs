@@ -204,124 +204,222 @@ body {
 /* =====================================================================
    VENTANA: ACTIVOS FIJOS (Rayman)
    ===================================================================== */
-.barra-sub {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-size: 11px;
-    padding: 2px 6px;
+
+
+.barra-top {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 10px;
+  letter-spacing: 0.5px;
 }
 
-.tabla-af-container {
-    display: flex;
-    border: 2px inset #808080;
-    background-color: #ffffff;
-    width: 100%;
+/* ── HEADER AZUL CON BANDERA Y TÍTULO ── */
+.header {
+  background: linear-gradient(to bottom, #1a3a6a 0%, #2a5a9a 50%, #1a3a6a 100%);
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 18px;
+  min-height: 90px;
 }
 
-.tabla-af-scroll {
-    flex: 1;
-    overflow: hidden;
+/* Bandera Bolivia */
+.bandera {
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.3);
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 1px;
 }
 
-.tabla-af {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
+.banda {
+  flex: 1;
 }
 
-.tabla-af thead tr th {
-    background: linear-gradient(to bottom, #4a7abf, #2a5a9f);
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: bold;
-    text-align: center;
-    padding: 4px 6px;
-    border-right: 1px solid #6a9acf;
+.banda.roja    { background-color: #c8102e; }
+.banda.amarilla { background-color: #f4c300; }
+.banda.verde   { background-color: #007a33; }
+
+/* Texto header */
+.header-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.tabla-af thead tr th:last-child {
-    border-right: none;
+.titulo-vsiaf {
+  font-size: 38px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 6px;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1;
 }
 
-.col-unidad  { width: 18%; }
-.col-descripcion { width: 55%; }
-.col-ciudad  { width: 27%; }
-
-.tabla-af tbody tr td {
-    font-size: 11px;
-    padding: 3px 6px;
-    border-bottom: 1px solid #c8d8f0;
-    border-right: 1px solid #c8d8f0;
-    height: 20px;
-    color: #000;
+.subtitulo-vsiaf {
+  font-size: 14px;
+  color: #b0ccee;
+  font-style: italic;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+  padding-left: 4px;
 }
 
-.tabla-af tbody tr td:last-child {
-    border-right: none;
+/* ── CUERPO GRIS CLARO ── */
+.cuerpo-login-principal {
+  background: rgb(196, 185, 185);
+  padding: 28px 40px 36px 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.tabla-af tbody tr:hover td {
-    background-color: #e8f0ff;
+/* ── PANEL LOGIN ── */
+.panel-login {
+  background-color: #87c2dc;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.fila-seleccionada-af td {
-    background-color: #2a5abf ;
-    color: #ffffff ;
+/* Título Login con línea */
+.login-titulo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a4a8a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 2px;
 }
 
-.scrollbar-v-af {
-    width: 16px;
-    display: flex;
-    flex-direction: column;
-    background-color: #d4d0c8;
-    border-left: 1px solid #808080;
+.linea-titulo {
+  flex: 1;
+  height: 1px;
+  background-color: #2a4a8a;
+  display: inline-block;
 }
 
-.scroll-btn-af {
-    width: 16px;
-    height: 16px;
-    background-color: #d4d0c8;
-    border: 1px outset #ffffff;
+/* ── FILAS FORMULARIO ── */
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fila-password{
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 7px;
-    cursor: pointer;
-    flex-shrink: 0;
-    color: #000;
+    gap: 48px;
+
 }
 
-.scrollbar-h-af {
+
+.etiqueta {
     display: flex;
-    height: 16px;
-    background-color: #d4d0c8;
-    border-top: 1px solid #808080;
-    width: 100%;
-}
-
-.scroll-btn-h-af {
-    width: 16px;
-    height: 16px;
-    background-color: #d4d0c8;
-    border: 1px outset #ffffff;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 7px;
-    cursor: pointer;
-    flex-shrink: 0;
-    color: #000;
+  color: #2a4a8a;
+  min-width: 160px;
+  text-align: left;
+  flex-shrink: 0;
+  font-size: 13px;
+  
 }
 
-.scroll-track-h-af {
-    flex: 1;
-    background-color: #c8c4bc;
+/* ── INPUTS ── */
+.input-login-principal {
+    margin-left: 25%;
+  width: 220px;
+  height: 24px;
+  border: 1px solid;
+  border-color: #808080 #dfdfdf #dfdfdf #808080;
+  background: #ffffff;
+  padding: 2px 5px;
+  outline: none;
+  color: #000000;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
 }
 
-.scroll-track-af {
-    flex: 1;
-    background-color: #c8c4bc;
+/* ── FILA NOTA + BOTÓN ── */
+.fila-nota {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
 }
+
+.nota {
+  color: #1a3a8a;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* ── BOTÓN ACEPTAR ── */
+.btn-aceptar {
+  min-width: 76px;
+  height: 24px;
+  padding: 2px 14px;
+  font-size: 12px;
+  font-family: Tahoma, sans-serif;
+  cursor: pointer;
+  background-color: #d4d0c8;
+  border: 1px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  color: #000000;
+  outline: none;
+}
+
+.btn-aceptar:hover {
+  background-color: #e0dcd4;
+}
+
+.btn-aceptar:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+}
+
+/* ── FOOTER AZUL OSCURO ── */
+.footer {
+  background-color: #040a42;
+  color: #ffffff;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer p {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* =====================================================================
    VENTANA: ADMINISTRACION DE RECURSOS (Alex)
@@ -1400,13 +1498,6 @@ body {
 
 
 /* ── VENTANA PRINCIPAL (clase proporcionada) ── */
-.ventana {
-  width: 700px;
-  background-color: #f0f0f0;
-  border: 2px solid #808080;
-  box-shadow: 2px 2px 0 #fff inset;
-  margin: auto;
-}
 
 /* ── BARRA DE TÍTULO ── */
 .titulo-barra {

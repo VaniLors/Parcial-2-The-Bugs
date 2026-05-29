@@ -4,15 +4,15 @@
 
 // ---- MAPA: id del boton -> id de la ventana ----
 const mapaVentanas = {
-    'btn-activos-fijos':    'ventana-activos-fijos',              // Rayman
+    'btn-activos-fijos':    'instalacion-entidad',                // Juan  
     'btn-grupos':           'ventana-grupo-contable',             // Vanilors
     'btn-oficinas':         'ventana-oficinas',                   // Gustavo
-    'btn-reportes':         'ventana-seguridad',                                 // pendiente
+    'btn-reportes':         'ventana-seguridad',                  // Cristian              
     'btn-administradores':  'ventana-administracion-recursos',    // Alex
-    'btn-sesion':           'instalacion-entidad',                                 // pendiente
+    'btn-sesion':           'ventana-activos-fijos',              // Raymod
     'btn-respaldos':        'ventana-transferencia',              // Vlady
     'btn-unidad':           'ventana-admin-unidad',               // Hugo
-    'btn-localizar':        'ventana-grupo-contable',             // Vanilors
+    'btn-localizar':         null,                                // en desarollo xD
 };
 
 // ---- Abre una ventana y muestra el overlay ----
